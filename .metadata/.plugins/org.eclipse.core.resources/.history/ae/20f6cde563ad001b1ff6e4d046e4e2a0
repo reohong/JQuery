@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title></title>
+<style>
+            p {
+                margin: 4px;
+                font-size:16px;
+                font-weight:bolder;
+                cursor:pointer;
+            }
+            .blue {
+                color:blue;
+            }
+            .highlight {
+                background:yellow;
+            }
+        </style>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+
+	<!-- <p> I would like to say :</p>
+	<script type="text/javascript"> $("p").after("<b>Hello</b>");</script>
+	<script type="text/javascript"> $("p").append("<strong>Hello</strong>");</script> -->
+	
+	<!-- <span>Span Text</span>
+	<strong>What about me?</strong>
+	<span>Another One</span>
+	<script>$("span").wrap("<div><div><p><em><b></b></em></p></div></div>");</script> -->
+	
+	<!-- <p>Hello</p>
+	how are
+	<p>you?</p>
+	<button>remove</button>
+	
+	<script>
+		$("button").click(function(){
+			$("p").remove();
+		});
+	</script> -->
+	
+	<!-- <p>Hello</p>
+	<p>cruel</p>
+	<p>World</p>
+	<script>$("<b>replaceAll!!</b>").replaceAll("p");</script> -->
+	
+	
+	
+	
+	
+</body>
+</html> 

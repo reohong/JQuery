@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title></title>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+
+	<p> I would like to say :</p>
+	<script type="text/javascript"> $("p").after("<b>Hello</b>");</script>
+	<!-- <script type="text/javascript"> $("p").append("<strong>Hello</strong>");</script> -->
+</body>
+</html> 

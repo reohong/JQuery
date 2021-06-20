@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title></title>
+<style>
+          body{
+                font-size:11px;
+                width:1000px;
+            }
+            #panel div,#panel li,#panel ul{
+                border:2px solid black;
+                margin:10px;
+                padding:10px;
+            }
+            #panel ul{
+                list-style: none;
+            }
+            #panel .s{
+                border:2px solid red;
+                background-color: #808080;
+            }
+            #panel #root{
+                margin-top:0;
+            }
+            textarea{
+                width:982px;
+                height:100px;
+                font-size:11px;
+                overflow: visible;
+            }        
+            #help{
+                float:left;
+                width:500px;
+                height:450px;
+                overflow-y: scroll;
+                overflow-x: hidden
+            }
+            #panel{
+                float:left;
+                width:500px;
+            }
+            #help table{
+                border:1px solid gray;
+                border-collapse: collapse;
+                width:100%;
+            }
+            #help table td{
+                border:1px solid gray;
+                padding:5px;
+            }
+            #help .title{
+                color:white;
+                background-color:#555;
+                padding:3px;
+            }
+            #help .title.checked{
+                background-color:red;
+            }
+        </style>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+
+	<!-- <p> I would like to say :</p>
+	<script type="text/javascript"> $("p").after("<b>Hello</b>");</script>
+	<script type="text/javascript"> $("p").append("<strong>Hello</strong>");</script> -->
+	
+	<!-- <span>Span Text</span>
+	<strong>What about me?</strong>
+	<span>Another One</span>
+	<script>$("span").wrap("<div><div><p><em><b></b></em></p></div></div>");</script> -->
+	
+	<!-- <p>Hello</p>
+	how are
+	<p>you?</p>
+	<button>remove</button>
+	
+	<script>
+		$("button").click(function(){
+			$("p").remove();
+		});
+	</script> -->
+	
+	<!-- <p>Hello</p>
+	<p>cruel</p>
+	<p>World</p>
+	<script>$("<b>replaceAll!!</b>").replaceAll("p");</script> -->
+	
+	<!-- <p class="blue"> Click to toggle</p>
+	<p class="blue"> highlight</p>
+	<p class="blue"> on these</p>
+	<p class="blue"> paragraphs</p>
+	<script>
+		$("p").click(function(){
+			$(this).toggleClass("highlight");
+			$(this).append( $(this).hasClass("highlight").toString());
+		});
+	</script> -->
+	
+<!-- 	<input type="text" value="some text" />
+	<p>
+	</p>
+	<script>
+		$("input").keyup( function(){
+			var value = $(this).val();
+			$("p").text(value);
+		}).keyup();
+	</script> -->
+	
+<!-- 	<p>
+		<input type="text" />
+		<span></span>
+	</p>	
+	<script>
+		$("input").focus( function(){
+			$(this).next("span").html("focus");
+		}).blur(function (){
+			$(this).next("span").html("blur");
+		}).change(function(e){
+			alert('chagne'+$(e.target).val());
+		}).select(function(){
+			$(this).next("span").html("select");
+		});
+	</script> -->
+	
+	<p>
+		Type 'correct' to validate
+	</p>
+	<form action = "javascript:alert('success!');">
+		<div>
+			<input type="text" />
+			<input type="submit" />
+		</div>
+	</form>
+	<span></span>	
+	<script>
+		$("form").submit( function(){
+			if($('input:first').val() == "correct"){
+				$("span").text("Validated..").show();
+				return true;
+			}
+			$("span").text("Not valid!").show().fadeOut(1000);
+			return false;
+		})
+	
+	</script>
+	
+</body>
+</html> 

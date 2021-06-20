@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>jQuery 예제</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$('#navigation>li').live('click',function (){  		 //id가 navigation인 것에서 li를 가져옴
+			$('#navigation>li').removeClass('selected');    //li중에서 'selected'가 선언된 클래스를 제거
+			$(this).addClass('selected');					// this(사용자가 선택한 엘리먼트)에 'selected'라는 클래스명을 부여
+		})
+	</script>
+<!-- 	<style type="text/css">
+		#navigation li {
+                list-style:none;
+                float:left;
+                padding:5px;
+            }
+            #navigation {
+                cursor:pointer;
+            }
+            #navigation .selected {
+                background-color:red;
+                color:white;
+            }
+	</style> -->
+</head>
+<body>
+	<!-- <ul	id ="navigation">
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>javascript</li>
+		<li class="selected">jQuery</li>
+		<li>mysql</li>
+	</ul>
+ -->
+	<!-- <div class="welcome"></div>
+	<div class="welcome"></div>
+	<script type="text/javascript">
+		$('.welcome').html('hello world!').css('background-color','yellow');
+	</script> -->
+
+<!-- 	<ul>
+		<li>test2</li>
+	</ul>
+	<ul class="foo">
+		<li>test</li>
+	</ul>
+	<script type="text/javascript">
+	(function($){            
+	        $('ul.foo').click( function() {						//CSS셀렉터에 아무것도 없으면 엘리먼트를 의미함(ul)
+	            $('li', this).css('background-color','red');	//this : 이벤트를 발생시킨 엘리먼트(이게 [context])
+	        });
+	    })(jQuery)
+	</script> -->
+	
+	<script type="text/javascript">
+		//jQuery(document.body).css("background-color","black");
+		$(document.body).css("background-color","red");
+	</script>
+
+</body>
+</html>
